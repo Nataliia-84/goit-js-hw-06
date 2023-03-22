@@ -11,4 +11,17 @@ console.log(`Number of categories: ${numberOfCategories}`)
 
 itemEl.forEach((item)=>{
 console.log('Category:',item.children[0].textContent);
-console.log(item.children[1].children.length)})
+console.log(`Elements: ${item.children[1].children.length}`)})
+
+
+
+// const ulEl=document.querySelector('#categories')
+// console.log(ulEl)
+// const itemEl=document.querySelectorAll('.item')
+// console.log(`Number of categories: ${itemEl.length}`)
+
+
+// itemEl.forEach((item)=>{
+//     console.log(`Category: ${item.children[0].textContent}`)
+//     console.log(`Elements: ${item.children[1].children.length}`)
+// })

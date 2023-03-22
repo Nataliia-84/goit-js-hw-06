@@ -29,3 +29,5 @@ const liEl=ingredients.map((item)=>{
   listEl.append(...liEl)
   console.log(liEl)
   console.log(listEl)
+
+ 
