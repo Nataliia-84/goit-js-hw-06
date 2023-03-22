@@ -23,3 +23,7 @@ button {
   cursor: pointer;
 }
 
+.image{
+  display: block;
+  height: 100%;
+}

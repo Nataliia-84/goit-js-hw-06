@@ -23,7 +23,7 @@ listEl.style.justifyContent='center'
 
 const itemEL=images.map(({url,alt})=>{
 return `<li>
-        <img src="${url}" alt="${alt}" width="370px" style="display: block;" style="height:100%;">
+        <img src="${url}" alt="${alt}" width="370px" class="image">
       </li>`
 
 
