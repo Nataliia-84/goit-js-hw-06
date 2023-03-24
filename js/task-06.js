@@ -10,6 +10,8 @@ inputEl.addEventListener('blur',auditInputValue)
 
 function onFocusInput(){
     console.log('in focus')
+    inputEl.classList.remove('invalid')
+    inputEl.classList.remove('valid')
 }
 
 function auditInputValue(event){
@@ -19,6 +21,9 @@ function auditInputValue(event){
     console.log(inputLengthNumber)
        if(inputLengthNumber!==event.currentTarget.value.length){
            inputEl.classList.add('invalid')
+           
     }
-    else inputEl.classList.replace('invalid','valid')
+    else inputEl.classList.add('valid')
+    
+    
 }
