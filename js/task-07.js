@@ -8,6 +8,6 @@ inputEL.addEventListener('input',onInputElchange)
 
 function onInputElchange(event) {
     
-  spamEl.style.fontSize= event.currentTarget.value+'px'
+  spamEl.style.fontSize= event.currentTarget.value +'px' 
        
 }
