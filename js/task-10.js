@@ -22,27 +22,43 @@ function onClikButtonCreate(event) {
 
 }
 
-function createBoxes(amount){
-   let width = 20
-    let height = 20
-    const step = 10
+// function createBoxes(amount){
+//    let width = 20
+//     let height = 20
+//     const step = 10
+//   for (let i = 1; i <= amount; i += 1){
+//     const color=`${getRandomHexColor()}`
+//     const box = document.createElement('div')
+//     width+=step
+//     height += step
+//     box.style.width = width+'px';
+//     box.style.height = height+'px';
+//     box.style.backgroundColor = color;
+//     console.log(box)
+//     boxCreate.append(box)
+//   }
+// }
+
+function createBoxes(amount) {
+  let step = 20;
   for (let i = 1; i <= amount; i += 1){
-    const color=getRandomHexColor()
-    const box = document.createElement('div')
-    width+=step
-    height += step
-    box.style.width = width+'px';
-    box.style.height = height+'px';
-    box.style.backgroundColor = color;
-    console.log(box)
-    boxCreate.append(box)
-  }
+    step+=10
+      const box=
+      `<div style= 'width:${step}px; height:${step}px; background-color:${getRandomHexColor()}'></div>`
+    
+  boxCreate.insertAdjacentHTML('beforeend',box)}
+    
+  
 }
+
+
+
+
 
 function onClickButtonDestroy(event) {
   
   console.log(event.currentTarget)
-  containar.children[0].value = 0;
+  containar.children[0].value = Number('');
   boxCreate.innerHTML=' '
  
 }
