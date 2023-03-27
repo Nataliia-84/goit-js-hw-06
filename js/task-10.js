@@ -41,7 +41,7 @@ function onClikButtonCreate(event) {
 
 function createBoxes(amount) {
   let step = 20;
-  for (let i = 1; i <= amount; i += 1){
+  for (let i = 1 ; i <= amount; i += 1){
     step+=10
       const box=
       `<div style= 'width:${step}px; height:${step}px; background-color:${getRandomHexColor()}'></div>`
